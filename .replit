@@ -5,6 +5,10 @@ modules = ["web", "python-3.11"]
 channel = "stable-24_11"
 packages = ["static-web-server"]
 
+[interpreter]
+command = ["python3", "-m", "http.server", "8080"]
+
+
 [deployment]
 publicDir = "/"
 deploymentTarget = "static"
@@ -55,7 +59,7 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 45081
+localPort = 36103
 externalPort = 3000
 
 [agent]
