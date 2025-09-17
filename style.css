@@ -147,7 +147,7 @@ section {
 
 .home-content {
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -160,10 +160,13 @@ section {
 }
 
 .home-description {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
   margin-bottom: 2.5rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-button {
@@ -215,19 +218,23 @@ section {
 
 .skills-list {
   list-style: none;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .skills-list li {
-  padding: 0.75rem 0;
+  padding: 0.8rem 0;
   border-bottom: 1px solid var(--border-color);
   font-weight: 500;
   color: var(--text-secondary);
   transition: var(--transition);
+  font-size: 0.95rem;
 }
 
 .skills-list li:hover {
   color: var(--primary-color);
   padding-left: 0.5rem;
+  transform: translateX(3px);
 }
 
 .skills-list li:last-child {
@@ -287,13 +294,21 @@ section {
 }
 
 .tech-tag {
-  padding: 0.25rem 0.75rem;
+  padding: 0.4rem 0.9rem;
   background: var(--bg-secondary);
   color: var(--primary-color);
   border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 600;
   border: 1px solid var(--border-color);
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.tech-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-1px);
 }
 
 /* Contact Section */
