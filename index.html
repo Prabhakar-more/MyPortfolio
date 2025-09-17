@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Portfolio</a>
+      </div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <div class="home-content">
+        <h1 class="home-title">Welcome to My Portfolio</h1>
+        <p class="home-description">I'm a passionate developer creating amazing digital experiences</p>
+        <a href="#about" class="cta-button">Learn More About Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a dedicated developer with a passion for creating innovative solutions and beautiful user experiences. With expertise in various technologies, I bring ideas to life through clean, efficient code.</p>
+          <p>My journey in development has been driven by curiosity and the desire to solve complex problems. I enjoy working on projects that challenge me and allow me to grow as a professional.</p>
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul class="skills-list">
+            <li>Web Development</li>
+            <li>JavaScript & Modern Frameworks</li>
+            <li>Responsive Design</li>
+            <li>Backend Development</li>
+            <li>Database Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <h2 class="section-title">My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-card">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">A comprehensive web application built with modern technologies, featuring responsive design and intuitive user interface.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-card">
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-description">An interactive dashboard with real-time data visualization and user-friendly interface for data analysis.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Database</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-card">
+            <h3 class="project-title">Project Three</h3>
+            <p class="project-description">A mobile-responsive e-commerce platform with secure payment integration and modern design principles.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Full Stack</span>
+              <span class="tech-tag">API Integration</span>
+              <span class="tech-tag">Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>I'm always interested in discussing new opportunities and exciting projects. Feel free to reach out!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <strong>Email:</strong> your.email@example.com
+            </div>
+            <div class="contact-item">
+              <strong>Location:</strong> Your City, Country
+            </div>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Personal Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
