@@ -33,15 +33,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Portfolio Website"
+args = "Portfolio Server"
 
 [[workflows.workflow]]
-name = "Portfolio Website"
+name = "Portfolio Server"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "static-web-server -w ./.config/static-web-server.toml"
+args = "python -m http.server 5000"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
@@ -56,7 +56,7 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 45241
+localPort = 44155
 externalPort = 3000
 
 [agent]
